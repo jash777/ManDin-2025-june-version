@@ -1,0 +1,1048 @@
+/* Services Component Styles */
+.services-section {
+    position: relative;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.services-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,1) 100%);
+}
+
+.services-content {
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+}
+
+/* What We Do Section */
+.what-we-do-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.what-we-do-bg-elements {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.what-we-do-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 4rem;
+    font-family: 'Denton-Bold', serif;
+    position: relative;
+    z-index: 10;
+}
+
+.what-we-do-hero {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.what-we-do-hero-title-orange {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: #ff6b35;
+    font-weight: 700;
+    text-align: center;
+}
+
+.what-we-do-hero-title-white {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.what-we-do-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    text-align: center;
+    max-width: 32rem;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-do-cta {
+    margin-top: 3.7rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.what-we-do-cta-text {
+    color: #ff6b35;
+    font-size: 1.3rem;
+    font-family: 'Denton-Bold', serif;
+}
+
+.what-we-do-arrow {
+    color: #ffffff;
+    width: 1.75rem;
+    height: 1.75rem;
+    transition: transform 0.3s ease;
+}
+
+.what-we-do-cta:hover .what-we-do-arrow {
+    transform: translateX(4px);
+}
+
+/* Features Grid */
+.features-grid {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.feature-card:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 107, 53, 0.3);
+}
+
+.feature-icon {
+    margin-bottom: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+    color: #ff6b35;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon svg {
+    color: #ffffff;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-title {
+    color: #ff6b35;
+}
+
+.feature-description {
+    color: #9ca3af;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-description {
+    color: #d1d5db;
+}
+
+.feature-border {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.feature-border-line {
+    width: 100%;
+    height: 1px;
+    background: #374151;
+    transition: background 0.3s ease;
+}
+
+.feature-card:hover .feature-border-line {
+    background: rgba(255, 107, 53, 0.3);
+}
+
+.feature-border-gradient {
+    position: absolute;
+    inset: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #ff6b35, rgba(255, 107, 53, 0.5));
+    transition: width 0.5s ease;
+}
+
+.feature-card:hover .feature-border-gradient {
+    width: 100%;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    background-color: rgba(17, 27, 33, 0.8);
+    transition: opacity 0.1s ease;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 32rem;
+    padding: 2rem;
+    color: #000000;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    background-color: #000000;
+    transform: scale(0.75);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.modal-content.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Denton-Bold', serif;
+    color: #ffffff;
+}
+
+.modal-description {
+    font-size: 1rem;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Who We Serve Section */
+.who-we-serve-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.who-we-serve-layout {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.who-we-serve-left {
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-right: 0;
+    text-align: center;
+}
+
+.who-we-serve-title {
+    font-family: 'Denton-Bold', serif;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.who-we-serve-subtitle {
+    margin-top: 1rem;
+}
+
+.who-we-serve-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.who-we-serve-right {
+    width: 100%;
+}
+
+/* Cards Mobile Scroll */
+.cards-mobile-scroll {
+    display: block;
+}
+
+.cards-scroll-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cards-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-mobile {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+    width: 280px;
+    scroll-snap-align: start;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    background-color: rgba(17, 27, 33, 0.4);
+}
+
+.card-mobile.featured {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.5), rgba(30, 64, 175, 0.3));
+}
+
+.card-mobile:hover {
+    background-color: rgba(17, 27, 33, 0.6);
+}
+
+.card-mobile.featured:hover {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(30, 64, 175, 0.4));
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 380px;
+}
+
+.card-metrics {
+    margin-bottom: 0.8rem;
+}
+
+.card-metrics-main {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #ff6b35;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.card-metrics-impact {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #d1d5db;
+    font-size: 0.75rem;
+}
+
+.card-title {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.7rem;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.card-mobile:hover .card-title {
+    color: #ff6b35;
+}
+
+.card-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #d1d5db;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.card-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.card-website-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-website-link a {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-website-link a:hover {
+    color: #ff6b35;
+}
+
+.card-app-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.app-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.app-link a,
+.app-link .coming-soon {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.app-link a:hover {
+    opacity: 0.8;
+}
+
+.app-link .coming-soon {
+    opacity: 0.5;
+}
+
+.app-link svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+.app-link span {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.7rem;
+}
+
+.card-story-button {
+    padding-top: 0.5rem;
+}
+
+.story-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    color: #ffffff;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 0.75rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.story-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-indicator {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.scroll-indicator p {
+    color: #9ca3af;
+    font-size: 0.8rem;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+/* Cards Desktop Grid */
+.cards-desktop-grid {
+    display: none;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+.card-desktop {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(17, 27, 33, 0.4);
+}
+
+.card-desktop.featured {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.5), rgba(30, 64, 175, 0.3));
+}
+
+.card-desktop:hover {
+    background-color: rgba(17, 27, 33, 0.6);
+}
+
+.card-desktop.featured:hover {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(30, 64, 175, 0.4));
+}
+
+.card-desktop:nth-child(1) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-desktop:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-desktop:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-desktop-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    min-height: 28rem;
+}
+
+.card-desktop-metrics {
+    margin-bottom: 1.5rem;
+}
+
+.card-desktop-metrics-main {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #ff6b35;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.card-desktop-metrics-impact {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #d1d5db;
+    font-size: 0.9rem;
+}
+
+.card-desktop-title {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.card-desktop:hover .card-desktop-title {
+    color: #ff6b35;
+}
+
+.card-desktop-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.card-desktop-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-desktop-website {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.card-desktop-website a {
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-desktop-website a:hover {
+    color: #ff6b35;
+}
+
+.card-desktop-apps {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.desktop-app-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.desktop-app-link a,
+.desktop-app-link .coming-soon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.desktop-app-link a:hover {
+    opacity: 0.8;
+}
+
+.desktop-app-link .coming-soon {
+    opacity: 0.5;
+}
+
+.desktop-app-link svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.desktop-app-link span {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+}
+
+.card-desktop-story {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.desktop-story-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.desktop-story-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Our Niche Section */
+.our-niche-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.our-niche-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-family: 'Denton-Bold', serif;
+    margin-bottom: 2rem;
+}
+
+.our-niche-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-niche-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+}
+
+.our-niche-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(17, 27, 33, 0.8), rgba(17, 27, 33, 0.75), rgba(17, 27, 33, 0.7));
+}
+
+.our-niche-content {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.our-niche-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.our-niche-main-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Denton-Bold', serif;
+    margin-bottom: 0.5rem;
+}
+
+.our-niche-sub-title {
+    color: #ff6b35;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Denton-Bold', serif;
+    margin-bottom: 1rem;
+}
+
+.our-niche-description {
+    color: #ffffff;
+    font-size: 0.9rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.our-niche-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.niche-item {
+    text-align: center;
+}
+
+.niche-item-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Denton-Bold', serif;
+    margin-bottom: 0.8rem;
+}
+
+.niche-item-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .what-we-do-title {
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+    
+    .what-we-do-hero-title-orange,
+    .what-we-do-hero-title-white {
+        font-size: 3.2rem;
+    }
+    
+    .what-we-do-description {
+        font-size: 1.1rem;
+    }
+    
+    .features-grid {
+        margin-top: 6rem;
+        gap: 2rem;
+    }
+    
+    .feature-card {
+        padding: 2rem;
+    }
+    
+    .feature-icon {
+        margin-bottom: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .feature-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-description {
+        font-size: 0.95rem;
+    }
+    
+    .feature-border {
+        margin-top: 2rem;
+    }
+    
+    .who-we-serve-layout {
+        margin-top: 8rem;
+    }
+    
+    .who-we-serve-left {
+        margin-bottom: 3rem;
+    }
+    
+    .who-we-serve-title {
+        font-size: 2.5rem;
+    }
+    
+    .who-we-serve-description {
+        font-size: 1rem;
+    }
+    
+    .our-niche-title {
+        font-size: 2.5rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    
+    .our-niche-content {
+        padding: 2rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .our-niche-main-title {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    
+    .our-niche-sub-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .our-niche-description {
+        font-size: 1rem;
+    }
+    
+    .our-niche-grid {
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    
+    .niche-item-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .niche-item-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .what-we-do-title {
+        font-size: 3rem;
+    }
+    
+    .what-we-do-hero-title-orange,
+    .what-we-do-hero-title-white {
+        font-size: 5rem;
+        text-align: left;
+    }
+    
+    .what-we-do-description {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    
+    .what-we-do-cta {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+    
+    .what-we-do-cta-text {
+        margin-left: 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+    
+    .feature-icon {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .feature-description {
+        font-size: 1rem;
+    }
+    
+    .feature-border {
+        margin-top: 2.5rem;
+    }
+    
+    .who-we-serve-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 7rem;
+    }
+    
+    .who-we-serve-layout {
+        margin-top: 16rem;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    
+    .who-we-serve-left {
+        width: 32%;
+        margin-bottom: 0;
+        padding-right: 2rem;
+        text-align: left;
+    }
+    
+    .who-we-serve-title {
+        font-size: 3.8rem;
+    }
+    
+    .who-we-serve-description {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+    
+    .who-we-serve-right {
+        width: 70%;
+        flex: 1;
+    }
+    
+    .cards-mobile-scroll {
+        display: none;
+    }
+    
+    .cards-desktop-grid {
+        display: block;
+    }
+    
+    .our-niche-title {
+        font-size: 3rem;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+    }
+    
+    .our-niche-content {
+        padding: 3rem;
+        padding-bottom: 3.7rem;
+    }
+    
+    .our-niche-text {
+        text-align: left;
+        max-width: none;
+    }
+    
+    .our-niche-main-title {
+        font-size: 4.7rem;
+    }
+    
+    .our-niche-sub-title {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .our-niche-description {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .our-niche-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+    
+    .niche-item {
+        text-align: left;
+    }
+    
+    .niche-item-title {
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .niche-item-description {
+        font-size: 1rem;
+    }
+} 

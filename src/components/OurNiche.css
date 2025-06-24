@@ -1,0 +1,80 @@
+/* OurNiche Component Styles - Card Design */
+
+/* Main container */
+#our-niche {
+    background-color: #000000;
+    padding: 0 1rem;
+}
+
+/* Orange color for gold theme */
+.text-orange {
+    color: #D6AD61 !important;
+}
+
+/* Card container styling */
+#our-niche .group {
+    min-height: 600px;
+    border-radius: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#our-niche .group:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Background image styling */
+#our-niche .absolute.inset-0.bg-cover {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    filter: brightness(0.4) contrast(1.1) !important;
+}
+
+/* Typography enhancements */
+#our-niche h2,
+#our-niche h3 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+#our-niche p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Glass morphism effect */
+#our-niche .backdrop-blur-sm {
+    backdrop-filter: blur(8px) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #our-niche .group {
+        min-height: 500px;
+    }
+    
+    #our-niche {
+        padding: 0 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #our-niche .group {
+        min-height: 450px;
+    }
+    
+    #our-niche {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Enhanced hover effects for individual items */
+#our-niche .group\/item:hover h3 {
+    transform: translateX(4px);
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions */
+#our-niche * {
+    transition: all 0.3s ease;
+} 

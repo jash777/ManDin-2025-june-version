@@ -1,0 +1,451 @@
+/* Niche Component Styles - Matching WhoWeServe Structure */
+.niche-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+    position: relative;
+    margin-top: -7rem;
+}
+
+/* Main Title */
+.niche-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-family: 'Denton-Bold', serif;
+    position: relative;
+    z-index: 10;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 10rem;
+}
+
+/* Header Section - Hero Content */
+.niche-header {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 15;
+}
+
+.niche-title-orange {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: #D6AD61;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(214, 173, 97, 0.3);
+}
+
+.niche-title-white {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.niche-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    text-align: justify;
+    max-width: 32rem;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 1rem auto 0;
+}
+
+/* Content Section */
+.niche-content {
+    position: relative;
+    margin-top: 3rem;
+}
+
+/* Main Card */
+.niche-card {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(214, 173, 97, 0.2);
+    background: linear-gradient(135deg, #0a1014 0%, #0f1419 100%);
+    backdrop-filter: blur(12px);
+    border-radius: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: cardSlideUp 0.8s ease-out 0.3s forwards;
+    width: 120%;
+    min-height: 500px;
+    margin-left: -10%;
+    margin-bottom: 12rem;
+    margin-top: 10rem;
+}
+
+@keyframes cardSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.niche-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(214, 173, 97, 0.08),
+        transparent
+    );
+    transition: left 0.8s ease;
+    z-index: 1;
+}
+
+.niche-card:hover::before {
+    left: 100%;
+}
+
+.niche-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(214, 173, 97, 0.5);
+    background: linear-gradient(135deg, #0f1419 0%, #141a20 100%);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(214, 173, 97, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Background Image */
+.niche-card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.niche-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.3) contrast(1.2);
+    transition: all 0.6s ease;
+}
+
+.niche-card:hover .niche-bg-image {
+    transform: scale(1.05);
+    filter: brightness(0.35) contrast(1.1);
+}
+
+.niche-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right, 
+        rgba(17, 27, 33, 0.8), 
+        rgba(17, 27, 33, 0.75), 
+        rgba(17, 27, 33, 0.7)
+    );
+    z-index: 2;
+}
+
+/* Card Content */
+.niche-card-content {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Header - Titles and Description inside card */
+.niche-card-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.niche-card-title-main {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+.niche-card-title-accent {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: #D6AD61;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.niche-card-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Columns */
+.niche-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 6rem;
+}
+
+.niche-column {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.niche-column:hover {
+    transform: translateY(-2px);
+}
+
+.niche-column h3 {
+    font-family: 'Denton-Bold', serif;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.niche-column:hover h3 {
+    color: #D6AD61;
+    transform: translateX(4px);
+}
+
+.niche-column p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.niche-column:hover p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .niche-container {
+        padding: 3rem 2rem 5rem 2rem;
+    }
+
+    .niche-title {
+        font-size: 2.5rem;
+    }
+
+    .niche-header {
+        margin-top: 2rem;
+    }
+
+    .niche-title-orange,
+    .niche-title-white {
+        font-size: 3rem;
+    }
+
+    .niche-description {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .niche-columns {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+    .niche-card-content {
+        padding: 2rem;
+    }
+
+    .niche-card-header {
+        text-align: left;
+        margin-bottom: 2.5rem;
+    }
+
+    .niche-card-title-main {
+        font-size: 2.2rem;
+    }
+
+    .niche-card-title-accent {
+        font-size: 2.2rem;
+    }
+
+    .niche-card-description {
+        font-size: 1rem;
+        text-align: left;
+        margin: 0;
+        max-width: none;
+    }
+
+    .niche-column {
+        text-align: left;
+    }
+
+    .niche-column h3 {
+        font-size: 1.8rem;
+    }
+
+    .niche-column p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .niche-container {
+        padding: 4rem 3rem 6rem 3rem;
+    }
+
+    .niche-title {
+        font-size: 3rem;
+    }
+
+    .niche-title-orange,
+    .niche-title-white {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    .niche-description {
+        font-size: 1.3rem;
+        text-align: left;
+        margin: 1rem 0 0;
+        max-width: 36rem;
+    }
+
+    .niche-header {
+        margin-top: 0;
+    }
+
+    .niche-card {
+        min-height: 600px;
+    }
+
+    .niche-card-content {
+        padding: 3rem;
+    }
+
+    .niche-card-header {
+        margin-bottom: 3rem;
+    }
+
+    .niche-card-title-main {
+        font-size: 4.7rem;
+        margin-bottom: 0;
+    }
+
+    .niche-card-title-accent {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .niche-card-description {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .niche-columns {
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .niche-column h3 {
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .niche-column p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #niche {
+        padding: 0 0.75rem;
+    }
+    
+    .niche-card {
+        min-height: 500px;
+    }
+    
+    .niche-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .niche-title-main {
+        font-size: 2.5rem;
+    }
+    
+    .niche-title-accent {
+        font-size: 2rem;
+    }
+    
+    .niche-description {
+        font-size: 1rem;
+    }
+    
+    .niche-column-title {
+        font-size: 1.8rem;
+    }
+    
+    .niche-column-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #niche {
+        padding: 0 0.5rem;
+    }
+    
+    .niche-card {
+        min-height: 450px;
+    }
+    
+    .niche-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .niche-header {
+        margin-bottom: 2rem;
+    }
+    
+    .niche-grid {
+        gap: 1.5rem;
+    }
+} 

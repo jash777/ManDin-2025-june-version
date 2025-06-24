@@ -1,0 +1,440 @@
+/* Mobile Footer Styles - Professional & Concise */
+
+/* Visibility Controls - Override existing CSS */
+@media (max-width: 1023.98px) {
+    .footer-content-new {
+        display: none !important;
+    }
+    
+    .footer-mobile {
+        display: flex !important;
+    }
+    
+    /* Ensure watermark is visible on mobile */
+    .footer-watermark {
+        z-index: 3 !important;
+        opacity: 1 !important;
+        pointer-events: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .watermark-text {
+        -webkit-text-stroke: 3px rgba(255, 149, 0, 0.4) !important;
+        text-stroke: 3px rgba(255, 149, 0, 0.4) !important;
+        font-size: clamp(3rem, 25vw, 8rem) !important;
+        color: rgba(255, 149, 0, 0.08) !important;
+        transform: rotate(-15deg) !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-content-new {
+        display: grid !important;
+    }
+    
+    .footer-mobile {
+        display: none !important;
+    }
+}
+
+/* Better text wrapping and alignment for small screens */
+@media (max-width: 768px) {
+    .mobile-company-name,
+    .mobile-company-tagline,
+    .mobile-follow-text {
+        text-align: center;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .mobile-contact-item span {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.footer-mobile {
+    padding: 2.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(15, 15, 15, 0.85) !important;
+    border-top: 1px solid rgba(255, 149, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+}
+
+
+
+/* Ensure parent container also has subtle background */
+@media (max-width: 1023.98px) {
+    .footer-new {
+        background: rgba(15, 15, 15, 0.95) !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-new {
+        background: #0f0f0f !important;
+    }
+}
+
+/* Footer Bottom Section - Mobile Responsive */
+@media (max-width: 1023.98px) {
+    .footer-bottom-new {
+        background: rgba(15, 15, 15, 0.9) !important;
+        padding: 1.5rem 1rem 1rem;
+        border-top: 1px solid rgba(255, 149, 0, 0.05);
+        backdrop-filter: blur(8px);
+    }
+    
+    .footer-bottom-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    /* Force horizontal layout for policy links */
+    .footer-new .footer-bottom-new .footer-bottom-content .footer-bottom-links {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    .copyright p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.8rem;
+        font-family: 'Gilroy-Regular', sans-serif;
+        margin: 0;
+    }
+    
+    .footer-bottom-links {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+    }
+    
+    .bottom-link {
+        color: rgba(255, 255, 255, 0.8) !important;
+        text-decoration: none !important;
+        font-size: 0.8rem !important;
+        font-family: 'Gilroy-Regular', sans-serif !important;
+        transition: color 0.3s ease !important;
+        display: inline !important;
+        white-space: nowrap !important;
+    }
+    
+    .bottom-link:hover {
+        color: #ff9500 !important;
+    }
+    
+    /* Style the separator */
+    .footer-bottom-links span {
+        color: rgba(255, 255, 255, 0.5) !important;
+        font-size: 0.8rem !important;
+        display: inline !important;
+        margin: 0 !important;
+    }
+    
+    .made-with-love span {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.75rem;
+        font-family: 'Gilroy-Regular', sans-serif;
+    }
+}
+
+/* Company Section - Classic & Elegant */
+.footer-mobile-company {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 149, 0, 0.06);
+    border: 1px solid rgba(255, 149, 0, 0.15);
+    border-radius: 12px;
+    position: relative;
+    z-index: 5;
+    backdrop-filter: blur(4px);
+}
+
+.mobile-company-name {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.mobile-company-tagline {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 149, 0, 0.9);
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+/* Contact Section - Simplified */
+.footer-mobile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.mobile-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.mobile-contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 0.5rem;
+    background: rgba(255, 149, 0, 0.05);
+    border: 1px solid rgba(255, 149, 0, 0.15);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    min-height: 80px;
+    backdrop-filter: blur(4px);
+}
+
+.mobile-contact-item:hover {
+    background: rgba(255, 149, 0, 0.06);
+    border-color: rgba(255, 149, 0, 0.2);
+    color: #ff9500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 149, 0, 0.1);
+}
+
+.mobile-contact-item svg {
+    opacity: 0.9;
+    color: #ff9500;
+}
+
+.mobile-contact-item:hover svg {
+    opacity: 1;
+    color: #ff9500;
+}
+
+.mobile-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.mobile-location svg {
+    opacity: 0.7;
+    color: #ff9500;
+}
+
+/* Social Section - Elegant */
+.footer-mobile-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 149, 0, 0.2);
+    position: relative;
+    z-index: 5;
+}
+
+.mobile-follow-text {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.mobile-social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.mobile-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 149, 0, 0.08);
+    border: 1px solid rgba(255, 149, 0, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.mobile-social-link:hover {
+    background: rgba(255, 149, 0, 0.15);
+    border-color: rgba(255, 149, 0, 0.6);
+    color: #ff9500;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 149, 0, 0.2);
+}
+
+/* Clean Responsive adjustments */
+@media (max-width: 480px) {
+    .footer-mobile {
+        padding: 2rem 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .mobile-company-name {
+        font-size: 1.5rem;
+    }
+    
+    .mobile-company-tagline {
+        font-size: 0.85rem;
+    }
+    
+    .mobile-contact-grid {
+        max-width: 320px;
+        gap: 0.625rem;
+    }
+    
+    .mobile-contact-item {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+        min-height: 75px;
+        border-radius: 6px;
+    }
+    
+    .mobile-location {
+        font-size: 0.8rem;
+    }
+    
+    .mobile-social-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+    }
+    
+    .footer-bottom-new {
+        padding: 1.25rem 0.875rem 0.875rem !important;
+    }
+    
+    .copyright p,
+    .bottom-link {
+        font-size: 0.75rem;
+    }
+    
+    .made-with-love span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer-mobile {
+        padding: 1.75rem 0.875rem 1.25rem;
+        gap: 1.25rem;
+    }
+    
+    .mobile-company-name {
+        font-size: 1.4rem;
+    }
+    
+    .mobile-contact-grid {
+        max-width: 280px;
+        gap: 0.5rem;
+    }
+    
+    .mobile-contact-item {
+        padding: 0.625rem 0.375rem;
+        font-size: 0.75rem;
+        min-height: 70px;
+    }
+    
+    .footer-bottom-new {
+        padding: 1rem 0.75rem 0.75rem !important;
+    }
+    
+    .footer-bottom-links {
+        gap: 0.375rem;
+    }
+}
+
+/* Dark theme optimization */
+@media (prefers-color-scheme: dark) {
+    .footer-mobile-company {
+        border-bottom-color: rgba(255, 149, 0, 0.15);
+    }
+    
+    .mobile-contact-item {
+        background: rgba(255, 149, 0, 0.02);
+        border-color: rgba(255, 149, 0, 0.2);
+    }
+    
+    .mobile-location {
+        background: rgba(255, 149, 0, 0.02);
+    }
+    
+    .footer-mobile-social {
+        border-top-color: rgba(255, 149, 0, 0.15);
+    }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+    .mobile-contact-item,
+    .mobile-social-link {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .mobile-contact-item {
+        border-color: rgba(255, 149, 0, 0.4);
+    }
+    
+    .mobile-social-link {
+        border-color: rgba(255, 149, 0, 0.3);
+    }
+    
+    .mobile-company-tagline {
+        color: #ff9500;
+    }
+} 

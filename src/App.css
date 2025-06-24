@@ -1,0 +1,46 @@
+/* Clean App.css - Remove default Vite styles */
+
+/* Section Divider - Classic Horizontal Line */
+.section-divider {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    overflow: hidden;
+}
+
+.divider-line {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 20%,
+        rgba(214, 173, 97, 0.6) 50%,
+        rgba(255, 255, 255, 0.1) 80%,
+        transparent 100%
+    );
+    margin: 0 2rem;
+}
+
+.divider-accent {
+    display: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section-divider {
+        padding: 3rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-divider {
+        padding: 4rem 0;
+    }
+}

@@ -1,0 +1,422 @@
+/* Footer Component Styles */
+
+/* Main Footer Container */
+.footer-new {
+    background: #0f0f0f;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Watermark Background - MANDIN Outlined Text */
+.footer-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watermark-text {
+    font-family: 'Denton-Bold', serif;
+    font-size: clamp(6rem, 20vw, 16rem);
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 149, 0, 0.363);
+    text-stroke: 2px rgba(255, 149, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 0.9;
+    opacity: 0.8;
+}
+
+.watermark-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Denton-Bold', serif;
+    font-size: clamp(6rem, 20vw, 16rem);
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 149, 0, 0.08);
+    text-stroke: 1px rgba(255, 149, 0, 0.08);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 0.9;
+    opacity: 0.6;
+}
+
+/* Desktop Footer Content Grid */
+.footer-content-new {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
+    gap: 3rem;
+    padding: 4rem 2rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer Sections */
+.footer-section-new {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Company Section */
+.company-section {
+    gap: 2rem;
+}
+
+.company-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.company-name {
+    font-family: 'Denton-Bold', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.company-tagline {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 149, 0, 0.9);
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.company-description {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Company Stats */
+.company-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.stat-number {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff9500;
+}
+
+.stat-label {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+/* Footer Titles */
+.footer-title {
+    font-family: 'Denton-Bold', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.title-icon {
+    color: #ff9500;
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-link {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.footer-link:hover {
+    color: #ff9500;
+    transform: translateX(4px);
+}
+
+.link-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover .link-icon {
+    opacity: 1;
+    color: #ff9500;
+}
+
+/* Contact Section */
+.contact-section {
+    gap: 2rem;
+}
+
+.contact-info-new {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item-new {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.contact-item-new:hover {
+    color: #ff9500;
+    transform: translateX(4px);
+}
+
+.contact-icon {
+    color: #ff9500;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* Social Section */
+.social-section {
+    margin-top: 1rem;
+}
+
+.social-title {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+
+.social-links-new {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.social-link-new {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.social-link-new:hover {
+    color: #ff9500;
+    transform: translateX(4px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.social-link-new.instagram:hover .social-icon {
+    color: #E4405F;
+}
+
+.social-link-new.linkedin:hover .social-icon {
+    color: #0077B5;
+}
+
+/* Footer Bottom */
+.footer-bottom-new {
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-family: 'Gilroy-Regular', sans-serif;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Gilroy-Regular', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.bottom-link:hover {
+    color: #ff9500;
+}
+
+.made-with-love span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .footer-content-new {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        padding: 3rem 1.5rem 2rem;
+    }
+    
+    .company-stats {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content-new {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.5rem 1rem 1.5rem;
+    }
+    
+    .company-name {
+        font-size: 2rem;
+    }
+    
+    .company-stats {
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 1023.98px) {
+    .footer-content-new {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-mobile {
+        display: none !important;
+    }
+}
+
+/* Dark theme optimization */
+@media (prefers-color-scheme: dark) {
+    .footer-new {
+        background: #0a0a0a;
+    }
+    
+    .footer-bottom-new {
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .footer-link,
+    .contact-item-new,
+    .social-link-new {
+        border-bottom: 1px solid transparent;
+    }
+    
+    .footer-link:hover,
+    .contact-item-new:hover,
+    .social-link-new:hover {
+        border-bottom-color: #ff9500;
+    }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+    .footer-link,
+    .contact-item-new,
+    .social-link-new,
+    .bottom-link {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+} 
