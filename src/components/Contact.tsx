@@ -347,6 +347,212 @@ const Contact = ({ isVisible, onClose }: ContactProps) => {
                         transform: scale(1);
                     }
                 }
+
+                /* Enhanced Mobile Responsive Styles */
+                @media (max-width: 768px) {
+                    .contact-container {
+                        padding: 1rem !important;
+                    }
+                    
+                    .content-section {
+                        padding: 2rem 1rem !important;
+                    }
+                    
+                    .content-wrapper h1 {
+                        font-size: 1.75rem !important;
+                        line-height: 1.2 !important;
+                        margin-top: 1rem !important;
+                        margin-bottom: 1.5rem !important;
+                    }
+                    
+                    .contact-content {
+                        flex-direction: column !important;
+                        gap: 2rem !important;
+                        margin-top: 1.5rem !important;
+                    }
+                    
+                    .contact-info {
+                        order: 2;
+                        text-align: center;
+                    }
+                    
+                    .contact-info .cimage {
+                        max-width: 200px !important;
+                        height: auto !important;
+                    }
+                    
+                    .form-container2 {
+                        order: 1;
+                        width: 100% !important;
+                        max-width: none !important;
+                    }
+                    
+                    .title-normal {
+                        font-size: 1.25rem !important;
+                        line-height: 1.3 !important;
+                        margin-bottom: 0.75rem !important;
+                    }
+                    
+                    .subtitle {
+                        font-size: 0.9rem !important;
+                        line-height: 1.4 !important;
+                        margin-bottom: 1.5rem !important;
+                    }
+                    
+                    .form-group {
+                        margin-bottom: 1.25rem !important;
+                    }
+                    
+                    .form-group label {
+                        font-size: 0.9rem !important;
+                        margin-bottom: 0.5rem !important;
+                    }
+                    
+                    .form-group input {
+                        font-size: 0.9rem !important;
+                        padding: 0.75rem !important;
+                        border-radius: 4px !important;
+                    }
+                    
+                    .submit-wrapper button {
+                        font-size: 0.9rem !important;
+                        padding: 0.75rem 2rem !important;
+                        width: 100% !important;
+                    }
+                    
+                    .close-button {
+                        top: 1rem !important;
+                        right: 1rem !important;
+                        width: 32px !important;
+                        height: 32px !important;
+                    }
+                    
+                    .error-message {
+                        font-size: 0.8rem !important;
+                        padding: 0.625rem !important;
+                        margin-bottom: 1rem !important;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .contact-container {
+                        padding: 0.75rem !important;
+                    }
+                    
+                    .content-section {
+                        padding: 1.5rem 0.75rem !important;
+                    }
+                    
+                    .content-wrapper h1 {
+                        font-size: 1.5rem !important;
+                        margin-top: 0.5rem !important;
+                        margin-bottom: 1rem !important;
+                    }
+                    
+                    .contact-content {
+                        gap: 1.5rem !important;
+                        margin-top: 1rem !important;
+                    }
+                    
+                    .contact-info .cimage {
+                        max-width: 150px !important;
+                    }
+                    
+                    .title-normal {
+                        font-size: 1.125rem !important;
+                        margin-bottom: 0.5rem !important;
+                    }
+                    
+                    .subtitle {
+                        font-size: 0.85rem !important;
+                        margin-bottom: 1.25rem !important;
+                    }
+                    
+                    .form-group {
+                        margin-bottom: 1rem !important;
+                    }
+                    
+                    .form-group label {
+                        font-size: 0.85rem !important;
+                    }
+                    
+                    .form-group input {
+                        font-size: 0.85rem !important;
+                        padding: 0.625rem !important;
+                    }
+                    
+                    .submit-wrapper button {
+                        font-size: 0.85rem !important;
+                        padding: 0.625rem 1.5rem !important;
+                    }
+                    
+                    .success-popup {
+                        max-width: 320px !important;
+                        padding: 2rem !important;
+                    }
+                    
+                    .success-popup h3 {
+                        font-size: 1.25rem !important;
+                    }
+                    
+                    .success-popup p {
+                        font-size: 0.9rem !important;
+                    }
+                    
+                    .success-popup button {
+                        font-size: 0.9rem !important;
+                        padding: 0.75rem 2rem !important;
+                    }
+                }
+                
+                @media (max-width: 360px) {
+                    .contact-container {
+                        padding: 0.5rem !important;
+                    }
+                    
+                    .content-section {
+                        padding: 1rem 0.5rem !important;
+                    }
+                    
+                    .content-wrapper h1 {
+                        font-size: 1.375rem !important;
+                    }
+                    
+                    .contact-info .cimage {
+                        max-width: 120px !important;
+                    }
+                    
+                    .title-normal {
+                        font-size: 1rem !important;
+                    }
+                    
+                    .subtitle {
+                        font-size: 0.8rem !important;
+                    }
+                    
+                    .form-group input {
+                        font-size: 0.8rem !important;
+                        padding: 0.5rem !important;
+                    }
+                    
+                    .submit-wrapper button {
+                        font-size: 0.8rem !important;
+                        padding: 0.5rem 1.25rem !important;
+                    }
+                    
+                    .success-popup {
+                        max-width: 280px !important;
+                        padding: 1.5rem !important;
+                    }
+                    
+                    .success-popup h3 {
+                        font-size: 1.125rem !important;
+                    }
+                    
+                    .success-popup p {
+                        font-size: 0.85rem !important;
+                    }
+                }
                 `
             }} />
         </div>

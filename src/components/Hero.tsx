@@ -11,6 +11,7 @@ const Hero = () => {
     const navItems = [
         { name: 'Home', href: '#home', external: false },
         { name: 'What We Do', href: '#whatwedo', external: false },
+        // { name: 'Who We Serve', href: '#whoweserve', external: false },
         { name: 'Our Niche', href: '#niche', external: false },
         { name: 'NEONPAY', href: 'https://neonpay.app', external: true }
     ];
@@ -37,9 +38,11 @@ const Hero = () => {
                 <img src={logo} alt="ManDin Studios" />
             </div>
 
-            {/* Navigation */}
+            {/* Mobile navigation removed - desktop nav only */}
+
+            {/* Desktop Navigation */}
             <nav className={`hero-nav ${videoLoaded ? 'loaded' : ''}`}>
-                <ul className="nav-links">
+                <ul className="nav-links desktop-nav">
                     {navItems.map((item, index) => (
                         <li key={index}>
                             <a 

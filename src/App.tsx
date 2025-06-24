@@ -22,7 +22,9 @@ const AppContent = () => {
         <div className="divider-line"></div>
         <div className="divider-accent"></div>
       </div>
-      <WhoWeServe />
+      <section id="whoweserve">
+        <WhoWeServe />
+      </section>
       <div className="section-divider">
         <div className="divider-line"></div>
         <div className="divider-accent"></div>

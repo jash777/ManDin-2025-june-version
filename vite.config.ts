@@ -7,5 +7,6 @@ export default defineConfig({
   server: {
     port: 5173,
     allowedHosts: ['mandinstudios.com','www.mandinstudios.com'],
+    host: '0.0.0.0',
   },
 })
