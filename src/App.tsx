@@ -12,8 +12,12 @@ const AppContent = () => {
 
   return (
     <>
-      <Hero />
-      <WhatWeDo />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="whatwedo">
+        <WhatWeDo />
+      </section>
       <div className="section-divider">
         <div className="divider-line"></div>
         <div className="divider-accent"></div>
@@ -23,7 +27,9 @@ const AppContent = () => {
         <div className="divider-line"></div>
         <div className="divider-accent"></div>
       </div>
-      <Niche />
+      <section id="niche">
+        <Niche />
+      </section>
       <Footer />
       
       {/* Contact Modal */}

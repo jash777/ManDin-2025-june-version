@@ -9,10 +9,10 @@ const Hero = () => {
     const { toggleContact } = useContact();
 
     const navItems = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Portfolio', href: '#portfolio' }
+        { name: 'Home', href: '#home', external: false },
+        { name: 'What We Do', href: '#whatwedo', external: false },
+        { name: 'Our Niche', href: '#niche', external: false },
+        { name: 'NEONPAY', href: 'https://neonpay.app', external: true }
     ];
 
     return (
@@ -42,7 +42,12 @@ const Hero = () => {
                 <ul className="nav-links">
                     {navItems.map((item, index) => (
                         <li key={index}>
-                            <a href={item.href} className="nav-link">
+                            <a 
+                                href={item.href} 
+                                className="nav-link"
+                                target={item.external ? '_blank' : '_self'}
+                                rel={item.external ? 'noopener noreferrer' : undefined}
+                            >
                                 {item.name}
                             </a>
                         </li>

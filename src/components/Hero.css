@@ -71,18 +71,17 @@
 .hero-nav {
     position: absolute;
     top: 7rem;
-    left: 75%;
-    transform: translateX(-50%);
+    right: 10rem;
     z-index: 10;
     opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
+    transform: translateY(-20px);
     transition: all 1.2s ease-out;
     transition-delay: 0.8s;
 }
 
 .hero-nav.loaded {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
 .nav-links {
@@ -90,19 +89,23 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 4rem;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-link {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
     position: relative;
     padding: 1rem 0 1.5rem 0;
     text-transform: uppercase;
+    white-space: nowrap;
+    min-width: max-content;
 }
 
 .nav-link::after {
@@ -124,6 +127,19 @@
 
 .nav-link:hover {
     color: #ffffff;
+}
+
+/* NEONPAY special styling */
+.nav-link[href="https://neonpay.app"] {
+    color: #C0F600;
+}
+
+.nav-link[href="https://neonpay.app"]:hover {
+    color: #C0F600;
+}
+
+.nav-link[href="https://neonpay.app"]::after {
+    background: #C0F600;
 }
 
 /* Hero Content */
@@ -240,16 +256,21 @@
 
     .hero-nav {
         top: 1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 1.5rem;
+        left: auto;
+        transform: none;
     }
 
     .nav-links {
-        gap: 2rem;
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        padding: 0.5rem 0 0.8rem 0;
     }
 
     .hero-title {
@@ -276,12 +297,18 @@
         margin-top: 0.5rem;
     }
 
+    .hero-nav {
+        right: 1rem;
+    }
+
     .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .nav-link {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        padding: 0.3rem 0 0.6rem 0;
     }
 
     .hero-title {
